@@ -1,12 +1,12 @@
 from flask import Flask
 
 myobj = Flask (__name__)
-name  = 'Lisa'
-city_names = ['Paris', 'London', 'Rome', 'Tahiti']
 
 #This is the view function
 @myobj.route("/")
 def home():
+    name  = 'Lisa'
+    city_names = ['Paris', 'London', 'Rome', 'Tahiti']
     return '''
     <html>
     <body>
